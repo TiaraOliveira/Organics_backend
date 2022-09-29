@@ -7,7 +7,7 @@
     "test": "tests"
   },
   "scripts": {
-    "dev": "dotenv -e .env.test prisma migrate dev && nodemon src/server.ts",
+    "dev": "nodemon src/server.ts",
     "test:unit": "dotenv -e .env.test jest -- -i --coverage --testPathPattern=/src/tests/unityTest",
     "test:integration": "dotenv -e .env.test jest -- -i --coverage --testPathPattern=/src/tests/integrationTest",
     "build": "tsc && npx prisma migrate deploy",
@@ -36,6 +36,7 @@
     "jsonwebtoken": "^8.5.1"
   },
   "devDependencies": {
+    "@types/cors": "^2.8.12",
     "@types/express": "^4.17.14",
     "nodemon": "^2.0.20",
     "prisma": "^4.4.0",
