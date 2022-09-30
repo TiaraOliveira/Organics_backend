@@ -29,3 +29,8 @@ model ingredients {
   productBatch String @unique
 
 }
+
+model products {
+  id       Int    @id @default(autoincrement())
+  name String  @unique
+}
