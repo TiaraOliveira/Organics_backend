@@ -1,5 +1,5 @@
 {
-  "name": "orgamics_backend",
+  "name": "organics_backend",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,8 +8,8 @@
   },
   "scripts": {
     "dev": "nodemon src/server.ts",
-    "test:unit": "dotenv -e .env.test jest -- -i --coverage --testPathPattern=/src/tests/unityTest",
-    "test:integration": "dotenv -e .env.test jest -- -i --coverage --testPathPattern=/src/tests/integrationTest",
+    "test:unit": "jest -- -i --coverage --testPathPattern=/src/tests/unitTest",
+    "test:integration": "jest -- -i --coverage --testPathPattern=/src/tests/integrationTest",
     "build": "tsc && npx prisma migrate deploy",
     "start": "node ./dist/src/server.js"
   },
@@ -29,19 +29,25 @@
     "bcrypt": "^5.0.1",
     "cors": "^2.8.5",
     "cryptr": "^6.0.3",
-    "dotenv": "^16.0.2",
+    "dotenv": "^16.0.3",
     "express": "^4.18.1",
     "express-async-errors": "^3.1.1",
     "joi": "^17.6.1",
     "jsonwebtoken": "^8.5.1"
   },
   "devDependencies": {
+    "@faker-js/faker": "^7.5.0",
     "@types/bcrypt": "^5.0.0",
     "@types/cors": "^2.8.12",
     "@types/express": "^4.17.14",
+    "@types/jest": "^29.1.1",
     "@types/jsonwebtoken": "^8.5.9",
+    "@types/supertest": "^2.0.12",
+    "jest": "^29.1.2",
     "nodemon": "^2.0.20",
     "prisma": "^4.4.0",
+    "supertest": "^6.2.4",
+    "ts-jest": "^29.0.3",
     "ts-node": "^10.9.1",
     "typescript": "^4.8.4"
   }

@@ -14,3 +14,13 @@ export async function createIngredientsInfo(ingredientsData: TypeIngredientsData
 
   await ingredientsRepository.createProduct(ingredientsData);
 }
+
+
+
+export async function getAllIngredients() {
+ 
+  const productsList = await ingredientsRepository.getAllProducts()
+
+
+  return productsList
+  }
