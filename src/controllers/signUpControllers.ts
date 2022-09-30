@@ -1,4 +1,4 @@
-import { createUser } from "../repositories/usersRepositorie";
+import { createUser } from "../repositories/usersRepository";
 import passwordEncrypter from "../utils/passwordEncrypter";
 import {Request, Response } from "express";
 

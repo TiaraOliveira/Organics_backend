@@ -1,4 +1,4 @@
-import { getUserByEmail } from "../repositories/usersRepositorie";
+import { getUserByEmail } from "../repositories/usersRepository";
 
 import {NextFunction, Request, Response } from "express";
 

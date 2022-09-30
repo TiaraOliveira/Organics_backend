@@ -16,3 +16,16 @@ model users {
   email    String @unique
   password String
 }
+
+
+model ingredients {
+  id       Int    @id @default(autoincrement())
+  name String
+  supplier String
+  isOrganic String
+  certificate String
+  invoice String
+  buyDate String
+  productBatch String @unique
+
+}
