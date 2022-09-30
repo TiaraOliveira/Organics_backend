@@ -13,3 +13,8 @@ export async function createProduct(product: TypeproductsData){
     await prisma.products.create({ data: product });
     
 }
+
+export function getAllProducts() {
+
+  return  prisma.products.findMany()
+}

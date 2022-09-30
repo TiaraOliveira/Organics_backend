@@ -14,3 +14,12 @@ export async function createproductsInfo(productsData: TypeproductsData) {
 
   await productRepository.createProduct(productsData);
 }
+
+export async function getproductsInfo() {
+ 
+  const productsList = await productRepository.getAllProducts()
+
+
+  return productsList
+  }
+ 
