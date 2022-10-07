@@ -1,5 +1,5 @@
-import { prisma } from '../database';
-import { TypeproductsData } from '../types/productsType';
+import { prisma } from '../database.js';
+import { TypeproductsData } from '../types/productsType.js';
 
 export async function getProductsbyName(name: string){
    

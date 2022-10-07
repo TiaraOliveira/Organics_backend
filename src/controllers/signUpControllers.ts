@@ -1,5 +1,5 @@
-import { createUser } from "../repositories/usersRepository";
-import passwordEncrypter from "../utils/passwordEncrypter";
+import { createUser } from "../repositories/usersRepository.js";
+import passwordEncrypter from "../utils/passwordEncrypter.js";
 import {Request, Response } from "express";
 
 export default async function signUp(req: Request, res: Response){

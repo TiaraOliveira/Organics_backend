@@ -1,8 +1,8 @@
 import cors from "cors";
 import express, { json } from "express";
 import "express-async-errors";
-import router from "./routers/index";
-import errorHandler from "./middlewares/errorHandler";
+import router from "./routers/index.js";
+import errorHandler from "./middlewares/errorHandler.js";
 
 
 const app = express();

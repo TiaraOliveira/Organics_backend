@@ -1,15 +1,16 @@
 {
   "name": "organics_backend",
   "version": "1.0.0",
+  "type": "module",
   "description": "",
   "main": "index.js",
   "directories": {
     "test": "tests"
   },
   "scripts": {
-    "dev": "nodemon src/server.ts",
-    "test:unit": "jest -- -i --coverage --testPathPattern=/src/tests/unitTest",
-    "test:integration": "jest -- -i --coverage --testPathPattern=/src/tests/integrationTest",
+    "dev": "dotenv -e .env.test prisma migrate dev && nodemon src/server.ts",
+    "test:unit": "jest -- -i --coverage --testPathPattern=/src/tests/unitTests",
+    "test:integration": "dotenv -e .env.test jest -- -i --coverage --testPathPattern=/src/tests/integrationTest",
     "build": "tsc && npx prisma migrate deploy",
     "start": "node ./dist/src/server.js"
   },
@@ -30,6 +31,7 @@
     "cors": "^2.8.5",
     "cryptr": "^6.0.3",
     "dotenv": "^16.0.3",
+    "dotenv-cli": "^6.0.0",
     "express": "^4.18.1",
     "express-async-errors": "^3.1.1",
     "joi": "^17.6.1",

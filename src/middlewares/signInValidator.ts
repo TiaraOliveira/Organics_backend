@@ -1,5 +1,5 @@
-import { getUserByEmail } from "../repositories/usersRepository";
-import passwordDecrypter from "../utils/passwordDecrypter"
+import { getUserByEmail } from "../repositories/usersRepository.js";
+import passwordDecrypter from "../utils/passwordDecrypter.js"
 import {NextFunction, Request, Response } from "express";
 
 export default async function signInValidator(req: Request, res: Response, next: NextFunction){ 

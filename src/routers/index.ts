@@ -1,8 +1,8 @@
 import {Router} from "express";
-import ingredientsRouter from "./ingredientsRouter";
-import productsRouter from "./productRouters";
-import signInRouter from "./signInRouters";
-import signUpRouter from "./signupRouters";
+import ingredientsRouter from "./ingredientsRouter.js";
+import productsRouter from "./productRouters.js";
+import signInRouter from "./signInRouters.js";
+import signUpRouter from "./signupRouters.js";
 
 
 const router = Router();

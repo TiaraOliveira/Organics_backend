@@ -1,7 +1,7 @@
 import { Router } from "express";
-import {postIngredients, getAllIngredients} from "../controllers/ingredientsController";
-import { schemaValidator } from "../middlewares/schemaValidator";
-import ingredientsSchema from "../schemas/ingredientsSchema";
+import {postIngredients, getAllIngredients} from "../controllers/ingredientsController.js";
+import { schemaValidator } from "../middlewares/schemaValidator.js";
+import ingredientsSchema from "../schemas/ingredientsSchema.js";
 
 const ingredientsRouter = Router()
 

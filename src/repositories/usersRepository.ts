@@ -1,5 +1,5 @@
-import { prisma } from '../database';
-import { TypeUsersData } from '../types/userTypes';
+import { prisma } from '../database.js';
+import { TypeUsersData } from '../types/userTypes.js';
 
 export async function getUserByEmail(email: string){
     const result = prisma.users.findUnique({where: {email}})

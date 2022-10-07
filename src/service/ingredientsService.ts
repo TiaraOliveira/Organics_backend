@@ -1,4 +1,4 @@
-import * as ingredientsRepository from "../repositories/ingredientsRepository";
+import * as ingredientsRepository from "../repositories/ingredientsRepository.js";
 import { TypeIngredientsData } from "../types/ingredientsType.js";
 
 export async function createIngredientsInfo(ingredientsData: TypeIngredientsData) {

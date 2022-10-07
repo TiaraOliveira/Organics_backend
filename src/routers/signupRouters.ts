@@ -1,8 +1,8 @@
 import { Router } from "express";
-import  {schemaValidator } from "../middlewares/schemaValidator";
-import signUpSchema from "../schemas/signUpSchema";
-import signUpValidator from "../middlewares/signUpValidator";
-import signUp from "../controllers/signUpControllers";
+import  {schemaValidator } from "../middlewares/schemaValidator.js";
+import signUpSchema from "../schemas/signUpSchema.js";
+import signUpValidator from "../middlewares/signUpValidator.js";
+import signUp from "../controllers/signUpControllers.js";
 
 
 

@@ -1,4 +1,4 @@
-import createToken from "../utils/createToken";
+import createToken from "../utils/createToken.js";
 import {Request, Response } from "express";
 
 export default async function signIn(req: Request, res: Response){

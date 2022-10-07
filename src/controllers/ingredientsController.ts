@@ -1,5 +1,5 @@
 import {Request, Response } from "express";
-import * as ingredientsService from "../service/ingredientsService"
+import * as ingredientsService from "../service/ingredientsService.js"
 
 export async function postIngredients(req: Request, res: Response){
     const ingredientsData = req.body
