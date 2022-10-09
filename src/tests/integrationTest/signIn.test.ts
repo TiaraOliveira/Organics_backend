@@ -62,3 +62,10 @@ describe('Test signup Routes',  () => {
   
   });
 });
+
+
+afterAll(async () => {
+    await prisma.$disconnect();
+  });
+  
+  
